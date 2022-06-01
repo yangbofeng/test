@@ -14,7 +14,8 @@ jobs:
   build:
     runs-on: ubuntu-20.04
     steps:
-
+    - name: Checkout source codes
+      uses: actions/checkout@v1
     - name: Sync Github Repos To Gitee  # 名字随便起
       uses: Yikun/hub-mirror-action@v1.1  # 使用Yikun/hub-mirror-action
       with:
